@@ -654,8 +654,8 @@ hendonosti.addTo(map);
 			$('.leaflet-control.elevation').fadeOut('fast');
 	});
 	
-	bounds_group.addLayer(fStrasLyon);
-	bounds_group.addLayer(fSanLis);
+	bounds_group.addLayer(madLis);
+	bounds_group.addLayer(luxembourg);
 	setBounds();
 	
 
