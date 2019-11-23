@@ -293,13 +293,6 @@
 		});
         cheminNav.addTo(map);
 
-		//  06 Danemark
-/*		var dkRoller = L.geoJson(danemark, {
-			onEachFeature: onEachFeature,
-			style: style
-		});
-        dkRoller.addTo(map);*/
-
 		// 07 gtmc
 		var gtMassifC = L.geoJson(gtmc, {
 			onEachFeature: onEachFeature,
@@ -319,7 +312,7 @@
 			onEachFeature: onEachFeature,
 			style: style
         });
-hendonosti.addTo(map);
+		hendonosti.addTo(map);
 		
 		// 10 Lyon - Aix
 		var lyonAixPce = L.geoJson(lyonAix, {
@@ -356,12 +349,12 @@ hendonosti.addTo(map);
 		});
         soustons.addTo(map);
 
-		// 15 Strasbourg - Saint-Petersbourg
-/*		var strasbSankt = L.geoJson(strasStPet, {
+		// 15 Lisbonne - Santiago
+		var lisSantiago = L.geoJson(lisSant, {
 			onEachFeature: onEachFeature,
 			style: style
 		});
-        strasbSankt.addTo(map);*/
+        lisSantiago.addTo(map);
 		
 		// 16 Toulouse - Miranda de Ebro
 		var toulMir = L.geoJson(tlseMirEbro, {
@@ -420,8 +413,6 @@ hendonosti.addTo(map);
 
 	// LAYER GROUPS
 	// Overlays are checkboxes
-	// var overlayMaps = new L.layerGroup();
-	// overlayMaps = {
 	var overLayers = [
 		{
 			group: "Fait",
@@ -452,11 +443,6 @@ hendonosti.addTo(map);
 					name:"Chemin Navarrais",
 					layer: cheminNav
 				},
-/*				{
-					active: true,
-					name:"Danemark en roller",
-					layer: dkRoller
-				},*/
                 {
                     active: true,
                     name:"GTMC",
@@ -497,11 +483,11 @@ hendonosti.addTo(map);
                     name:"Soustons - St Jean",
                     layer: soustons
                 },
-/*                {
+                {
                     active: true,
-                    name:"Strasbourg - St Pétersbourg",
-                    layer: strasbSankt
-                },*/
+                    name:"Lisbonne - Santiago",
+                    layer: lisSantiago
+                },
                 {
                     active: true,
                     name:"Toulouse - Miranda de Ebro",
@@ -703,7 +689,6 @@ $( document ).ready(function() {
     $(faitGroupLabel).append('<span id="g1" class="laySelect"><i class="fas fa-times"></i> / <i class="far fa-check-square"></i></i></span>');
     var faitGroupCbList = $('.leaflet-panel-layers-group:contains("Fait")').find('input[type=checkbox]');
     var faitGroupList = [aixCannes,bdxMoissac,revelSarlat,brianconAix,cheminNav,gtMassifC,gtMtnNoir,hendSanSeb,lyonAixPce,lyonBordeaux,nantesHend,revAix,sousPiePor,tlseMirEbro];
-    //var faitGroupList = [aixCannes,bdxMoissac,revelSarlat,brianconAix,cheminNav,gtMassifC,gtMtnNoir,hendSanSeb,lyonAixPce,lyonBordeaux,nantesHend,revAix,sousPiePor,tlseMirEbro,strasbSankt,dkRoller];
 
     var nvGroupLabel = $('.leaflet-panel-layers-grouplabel:contains("2020")');
     $(nvGroupLabel).append('<span id="g2" class="laySelect"><i class="fas fa-times"></i> / <i class="far fa-check-square"></i></i></span>');
