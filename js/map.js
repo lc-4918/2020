@@ -641,6 +641,9 @@
 	});
 	
 	bounds_group.addLayer(madLis);
+	bounds_group.addLayer(lisSantiago);
+	bounds_group.addLayer(nantesStras);
+	bounds_group.addLayer(brianconAix);
 	bounds_group.addLayer(luxembourg);
 	setBounds();
 	
