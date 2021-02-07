@@ -15,8 +15,11 @@ Programme de l'année 2020
 <br>
 
 Consommation de cartes par service WMS/WMTS<br>
-Google Streets<br>
 Mapbox Outdoors<br>
+Google Streets, Satelite, Relief<br>
+OSM Cycle<br>
+Waymarked trails mtb<br>
+Waymarked trails route<br>
 
 ## Demo
 
